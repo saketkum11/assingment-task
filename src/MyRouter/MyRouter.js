@@ -4,7 +4,7 @@ const MyRouter = () => {
   return (
     <>
       <Routes>
-        <Route path="/landing" element={<Landing />} />
+        <Route path="/" element={<Landing />} />
       </Routes>
     </>
   );
