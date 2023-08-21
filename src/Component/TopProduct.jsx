@@ -2,7 +2,7 @@ import React from "react";
 
 const TopProduct = () => {
   return (
-    <section className="col-span-4 bg-white p-6">
+    <section className="col-span-4 bg-white p-10 rounded-2xl">
       <div className="flex justify-between items-center">
         <span className="text-xl font-bold">Top Products</span>
         <select>
