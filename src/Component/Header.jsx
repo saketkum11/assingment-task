@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { useAuth } from "../Context/AuthProvider";
+import { SignOut } from "./SignOut";
 
 const Header = () => {
+  const { authData } = useAuth();
+  const [signOutModal, setSignOutModal] = useState(false);
+  const handleModal = () => {
+    setSignOutModal((flag) => !flag);
+  };
   return (
     <header className="col-span-8 flex justify-between items-center mt-4">
       <div>
-        <span className="text-2xl font-bold">Dashboard</span>
+        <span className="text-2xl font-extrabold">Dashboard</span>
       </div>
       <nav className="">
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center relative gap-4">
           <li>
             <input
               type="text"
@@ -33,10 +40,20 @@ const Header = () => {
               />
             </svg>
           </li>
-          <li>
-            <img src="./logo512.png" className="w-8 h-8" alt="" />
+          <li
+            onClick={() => {
+              handleModal();
+            }}
+            className=""
+          >
+            <img
+              src={authData?.photoURL}
+              className="w-8 h-8 rounded-full"
+              alt=""
+            />
           </li>
         </ul>
+        {signOutModal && <SignOut />}
       </nav>
     </header>
   );

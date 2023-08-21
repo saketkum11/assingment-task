@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { UserCredential } from "../Component/UserCredential";
+import { useAuth } from "../Context/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const { token } = useAuth();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (token) {
+      navigate("/dashboard");
+    }
+  }, [token, navigate]);
   return (
     <main className="">
       <div className="grid grid-cols-10 justify-center  ">

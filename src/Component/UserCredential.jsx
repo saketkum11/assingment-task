@@ -1,13 +1,20 @@
 import React from "react";
+import { useAuth } from "../Context/AuthProvider";
 
 const UserCredential = () => {
+  const { signin } = useAuth();
   return (
     <div className=" max-w-sm mx-auto">
       <div className=" flex flex-col justify-center  min-h-screen">
         <h4 className="text-3xl font-bold text-left">Sign In</h4>
         <p className="text-left my-2">Sign in to your account</p>
         <div className="flex justify-between my-2 gap-4">
-          <button className="flex gap-2 items-center justify-center flex-1 bg-white  px-2 py-3 rounded-xl ">
+          <button
+            onClick={() => {
+              signin();
+            }}
+            className="flex gap-2 items-center justify-center flex-1 bg-white  px-2 py-3 rounded-xl "
+          >
             <svg
               className="w-4"
               viewBox="-0.5 0 48 48"
