@@ -7,7 +7,7 @@ const UserCredential = () => {
         <h4 className="text-3xl font-bold text-left">Sign In</h4>
         <p className="text-left my-2">Sign in to your account</p>
         <div className="flex justify-between my-2 gap-4">
-          <button className="flex gap-2 items-center justify-center flex-1 bg-white p-2 rounded-xl ">
+          <button className="flex gap-2 items-center justify-center flex-1 bg-white  px-2 py-3 rounded-xl ">
             <svg
               className="w-4"
               viewBox="-0.5 0 48 48"
@@ -52,7 +52,7 @@ const UserCredential = () => {
             </svg>
             <p className="text-xs text-slate-400">Signin With Google</p>
           </button>
-          <button className="flex gap-2 items-center justify-center flex-1 bg-white p-2 rounded-xl ">
+          <button className="flex gap-2 items-center justify-center flex-1 bg-white px-2 py-3 rounded-xl ">
             <svg
               className="w-4"
               viewBox="-1.5 0 20 20"
