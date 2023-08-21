@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import { Landing } from "../server";
+import { Dashboard, Landing } from "../server";
 const MyRouter = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );
