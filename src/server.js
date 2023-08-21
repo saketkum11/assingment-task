@@ -5,6 +5,7 @@ import { SideNav } from "./Component/SideNav";
 import { RevenueCards } from "./Component/RevenueCards";
 import { TopProduct } from "./Component/TopProduct";
 import { Schedules } from "./Component/Schedules";
+import { Header } from "./Component/Header";
 export {
   Landing,
   MyRouter,
@@ -13,4 +14,5 @@ export {
   RevenueCards,
   TopProduct,
   Schedules,
+  Header,
 };
