@@ -27,29 +27,28 @@ const Nav = () => {
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
-            {" "}
             <path
               d="M20 7L4 7"
               stroke="#ffffff"
-              stroke-width="2.4"
-              stroke-linecap="round"
-            ></path>{" "}
+              strokeWidth="2.4"
+              strokeLinecap="round"
+            ></path>
             <path
               d="M20 12L4 12"
               stroke="#ffffff"
-              stroke-width="2.4"
-              stroke-linecap="round"
-            ></path>{" "}
+              strokeWidth="2.4"
+              strokeLinecap="round"
+            ></path>
             <path
               d="M20 17L4 17"
               stroke="#ffffff"
-              stroke-width="2.4"
-              stroke-linecap="round"
-            ></path>{" "}
+              strokeWidth="2.4"
+              strokeLinecap="round"
+            ></path>
           </g>
         </svg>
       </button>

@@ -44,7 +44,6 @@ const AuthProvider = ({ children }) => {
       unsubcribe();
     };
   }, []);
-  console.log(authData, token);
   return (
     <AuthContext.Provider
       value={{ signin, token, signOutLog, tokenAccess, authData }}
