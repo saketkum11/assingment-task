@@ -4,9 +4,9 @@ import { useAuth } from "../Context/AuthProvider";
 const UserCredential = () => {
   const { signin } = useAuth();
   return (
-    <div className=" max-w-sm mx-auto">
-      <div className=" flex flex-col justify-center  min-h-screen">
-        <h4 className="text-3xl font-bold text-left">Sign In</h4>
+    <div className=" sm:max-w-sm max-w-xs mx-auto ">
+      <div className="mx-5 flex flex-col justify-center  min-h-screen">
+        <h4 className="text-xl font-bold text-left">Sign In</h4>
         <p className="text-left my-2">Sign in to your account</p>
         <div className="flex justify-between my-2 gap-4">
           <button
@@ -99,7 +99,7 @@ const UserCredential = () => {
               <label className="text-left">Email address</label>
               <input
                 type="email"
-                className="bg-slate-200  py-2 px-4 rounded-xl text-lg"
+                className="bg-slate-200 sm:py-2   py-1 px-4 rounded-xl text-lg"
                 placeholder="johndoe@gmail.com"
               />
             </div>
@@ -107,7 +107,7 @@ const UserCredential = () => {
               <label className="text-left ">Password</label>
               <input
                 type="password"
-                className="bg-slate-200 text-base py-2 px-4 rounded-xl"
+                className="bg-slate-200 text-base sm:py-2   py-1 px-4 rounded-xl"
                 placeholder=".............."
               />
             </div>

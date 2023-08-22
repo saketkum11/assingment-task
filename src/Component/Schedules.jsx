@@ -2,7 +2,7 @@ import React from "react";
 
 const Schedules = () => {
   return (
-    <div className="col-span-4 bg-white p-10 rounded-2xl">
+    <div className="sm:col-span-6 md:col-span-3 lg:col-span-4 bg-white p-10 rounded-2xl">
       <div className="flex justify-between items-center">
         <span className="font-bold text-xl">Today Schedules</span>
         <span>See all </span>

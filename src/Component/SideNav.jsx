@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SideNav = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-between items-center gap-6 mt-6">
+    <div className=" bg-black fixed top-0 bottom-8 w-1/5 md:flex flex-col justify-between items-center rounded-2xl  gap-6 mt-6 p-10">
       <div className="flex flex-col">
         <h2 className="text-white text-left text-4xl" to="/">
           Board.

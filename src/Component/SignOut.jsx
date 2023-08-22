@@ -7,7 +7,7 @@ const SignOut = () => {
     signOutLog();
   };
   return (
-    <div className="max-w-sm absolute z-20 top-24 right-25 flex flex-col gap-2 bg-white p-8">
+    <div className="max-w-sm absolute z-20 top-28 right-28 sm:top-24 sm:right-25 flex flex-col gap-2 bg-white p-8">
       <span>{authData?.displayName}</span>
       <span>{authData?.email}</span>
       <button

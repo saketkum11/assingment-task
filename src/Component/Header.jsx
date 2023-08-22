@@ -9,13 +9,13 @@ const Header = () => {
     setSignOutModal((flag) => !flag);
   };
   return (
-    <header className="col-span-8 flex justify-between items-center mt-4">
+    <header className="flex justify-between items-center mt-4 sm:col-span-6 lg:col-span-8 ">
       <div>
-        <span className="text-2xl font-extrabold">Dashboard</span>
+        <span className="lg:text-2xl  lg:font-extrabold">Dashboard</span>
       </div>
       <nav className="">
         <ul className="flex items-center relative gap-4">
-          <li>
+          <li className="hidden sm:block">
             <input
               type="text"
               className="py-2 px-4 rounded-2xl"
