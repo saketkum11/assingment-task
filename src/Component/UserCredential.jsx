@@ -4,9 +4,9 @@ import { useAuth } from "../Context/AuthProvider";
 const UserCredential = () => {
   const { signin } = useAuth();
   return (
-    <div className=" sm:max-w-sm max-w-xs mx-auto ">
+    <div className=" sm:max-w-md max-w-xs mx-auto ">
       <div className="mx-5 flex flex-col justify-center  min-h-screen">
-        <h4 className="text-xl font-bold text-left">Sign In</h4>
+        <h4 className="text-4xl font-extrabold text-left">Sign In</h4>
         <p className="text-left my-2">Sign in to your account</p>
         <div className="flex justify-between my-2 gap-4">
           <button

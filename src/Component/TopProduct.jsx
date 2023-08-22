@@ -39,8 +39,8 @@ const TopProduct = () => {
       <div className="flex justify-between items-center">
         <span className="text-xl font-bold">Top CryptoCurrency Company</span>
       </div>
-      <div className="flex justify-center mt-5">
-        <div className="flex flex-1 justify-center max-w-sm">
+      <div className="flex justify-center items-center mt-5">
+        <div className="flex flex-1 justify-center w-5">
           <Doughnut data={data} />
         </div>
         <div className="flex-1 flex flex-col  gap-4">

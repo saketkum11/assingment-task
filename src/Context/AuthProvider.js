@@ -19,7 +19,6 @@ const AuthProvider = ({ children }) => {
   const signin = async () => {
     try {
       const res = await signInWithPopup(auth, provider);
-      console.log(res, "news 23");
       setAuthData(res.user);
       navigate("/dashboard");
     } catch (error) {
