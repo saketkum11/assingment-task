@@ -9,6 +9,7 @@ import { Header } from "./Component/Header";
 import { AuthProvider } from "./Context/AuthProvider";
 import { auth } from "./Firebase/firebase";
 import { SignOut } from "./Component/SignOut";
+import { ChartProvider } from "./Context/ChartProvider";
 export {
   Landing,
   MyRouter,
@@ -21,4 +22,5 @@ export {
   AuthProvider,
   auth,
   SignOut,
+  ChartProvider,
 };

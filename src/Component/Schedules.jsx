@@ -10,9 +10,7 @@ const Schedules = () => {
       <ul className="flex flex-col gap-4 mt-5">
         <li className=" border-l-4 border-green-400">
           <div className="flex flex-col items-start ml-2">
-            <span className=" text-sm font-bold">
-              Meeting with suppliers from Kuta Bali
-            </span>
+            <span className=" text-sm font-bold">Meeting news india</span>;
             <span>14.00-15.00</span>
             <p>at Sunset Road, Kuta, Bali</p>
           </div>
